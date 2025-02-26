@@ -1,0 +1,23 @@
+# -*- mode: cperl; coding: utf-8; -*-
+# %filename%
+# created at %date% by %author%
+# (c) %year% Benjamin Walkenhorst <krylon@gmx.net>
+# Time-stamp: <2015-02-20 18:39:19 krylon>
+
+package %module%;
+
+use strict;
+use warnings;
+use diagnostics;
+use utf8;
+
+use feature qw(say);
+
+use Carp;
+use English '-no_match_vars';
+
+1;
+
+# Local Variables: #
+# compile-command: "perlcritic -1 --nocolor %filename%" #
+# End: #
