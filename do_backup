@@ -1,7 +1,7 @@
 #!/usr/bin/zsh
-# Time-stamp: <2025-01-27 17:50:38 krylon>
+# Time-stamp: <2025-03-07 19:25:20 krylon>
 
-export BORG_REPO=/wintermute/backup/borg/`hostname -s`
+export BORG_REPO=wintermute:/data/Files/backup/borg/`hostname -s`
 export BORG_PASSPHRASE="Wer das liest, ist doof."
 
 ARCHIVE_NAME=`date +%Y_%m_%d`
