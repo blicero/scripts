@@ -1,0 +1,8 @@
+#!/usr/bin/zsh
+# Time-stamp: <2025-03-07 19:10:06 krylon>
+
+export BORG_REPO=/wintermute/backup/borg/`hostname -s`
+export BORG_PASSPHRASE="Wer das liest, ist doof."
+
+borg prune --list -s -d 14 -w 6 -m 18
+borg compact -p

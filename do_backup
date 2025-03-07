@@ -1,0 +1,24 @@
+#!/usr/bin/zsh
+# Time-stamp: <2025-01-27 17:50:38 krylon>
+
+export BORG_REPO=/wintermute/backup/borg/`hostname -s`
+export BORG_PASSPHRASE="Wer das liest, ist doof."
+
+ARCHIVE_NAME=`date +%Y_%m_%d`
+
+echo "Backup to ${BORG_REPO}::${ARCHIVE_NAME}"
+
+borg create --sparse \
+     ::$ARCHIVE_NAME \
+     ~/Dokumente \
+     ~/diary/{diary,Apotheken}.org.xz \
+     .zshrc \
+     .config/{fish,mpv,dconf,gh,mate} \
+     ~/go/src/github.com/blicero \
+     /data/code/python \
+     ~/.emacs.d \
+     ~/OneDrive/Dokumente \
+     ~/.ssh \
+     ~/.profile \
+     ~/*.pub \
+     ~/.thunderbird
