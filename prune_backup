@@ -1,6 +1,7 @@
 #!/usr/bin/zsh
-# Time-stamp: <2025-03-07 19:25:34 krylon>
+# Time-stamp: <2025-07-02 16:32:28 krylon>
 
+export BORG_RELOCATED_REPO_ACCESS_IS_OK=yes
 export BORG_REPO=wintermute:/data/Files/backup/borg/`hostname -s`
 export BORG_PASSPHRASE="Wer das liest, ist doof."
 

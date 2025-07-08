@@ -1,6 +1,7 @@
 #!/usr/bin/zsh
-# Time-stamp: <2025-03-07 19:25:20 krylon>
+# Time-stamp: <2025-07-02 16:32:18 krylon>
 
+export BORG_RELOCATED_REPO_ACCESS_IS_OK=yes
 export BORG_REPO=wintermute:/data/Files/backup/borg/`hostname -s`
 export BORG_PASSPHRASE="Wer das liest, ist doof."
 
@@ -15,7 +16,8 @@ borg create --sparse \
      .zshrc \
      .config/{fish,mpv,dconf,gh,mate} \
      ~/go/src/github.com/blicero \
-     /data/code/python \
+     /data/code/{python,scripts,dreamland} \
+     ~/bin \
      ~/.emacs.d \
      ~/OneDrive/Dokumente \
      ~/.ssh \
