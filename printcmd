@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+# Time-stamp: <2024-11-15 12:44:35 krylon>
+
+use strict;
+use warnings;
+use feature qw/say/;
+
+foreach my $pid (@ARGV) {
+  my $path = "/proc/$pid/cmdline";
+  say "$pid: " . `cat $path`;
+}
+
